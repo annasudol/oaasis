@@ -1,0 +1,59 @@
+.container {
+  align-self: stretch;
+  flex: 1 1 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.userContent {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9.6px;
+  display: flex;
+}
+
+.avatarContainer {
+  width: 32px;
+  height: 32px;
+  background: #75c163;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-family: 'Onest';
+  font-weight: 400;
+}
+
+.userInfo {
+  width: 102px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.userName {
+  align-self: stretch;
+  color: white;
+  font-size: 12px;
+  font-family: 'Onest';
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.userEmail {
+  align-self: stretch;
+  color: white;
+  font-size: 12px;
+  font-family: 'Onest';
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}

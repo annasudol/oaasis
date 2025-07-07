@@ -1,0 +1,48 @@
+.categoryButton {
+  width: 100%;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.categoryButton:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.categoryButton:focus {
+  border: 0;
+  outline: none;
+}
+
+/* Removed categoryButtonCollapsed as we're handling rotation on the icon level */
+
+.categoryTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.categoryIcon {
+  height: 12px;
+  width: 12px;
+  color: var(--color-text-light);
+  transition: transform 0.2s ease;
+}
+
+.iconRotated {
+  transform: rotate(-90deg);
+}
+
+.categoryTitle {
+  font-family: 'Onest', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  line-height: 16px;
+}

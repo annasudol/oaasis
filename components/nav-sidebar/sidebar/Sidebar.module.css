@@ -1,0 +1,70 @@
+.sidebarGroup {
+  position: relative;
+}
+
+.sidebarGap {
+  position: relative;
+  width: var(--sidebar-width);
+  background-color: var(--color-primary);
+  transition: width 200ms linear;
+}
+
+/* Variant styles */
+[data-collapsible='offcanvas'] .sidebarGap {
+  width: 0;
+}
+
+[data-side='right'] .sidebarGap {
+  transform: rotate(180deg);
+}
+
+[data-collapsible='icon'] .sidebarGap {
+  width: var(--sidebar-width-icon);
+}
+
+.sidebarContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 10;
+  height: 100vh;
+  width: var(--sidebar-width);
+  transition:
+    left 200ms linear,
+    right 200ms linear,
+    width 200ms linear;
+}
+
+[data-collapsible='icon'] .sidebarContainer {
+  width: var(--sidebar-width-icon);
+}
+
+[data-side='left'] .sidebarContainer {
+  border-right-width: 1px;
+}
+
+[data-side='right'] .sidebarContainer {
+  border-left-width: 1px;
+}
+
+.sidebarInner {
+  align-self: stretch;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #48aaa7;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow at this container level */
+}
+
+[data-variant='floating'] .sidebarInner {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: var(--sidebar-border);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}

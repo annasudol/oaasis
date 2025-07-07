@@ -1,0 +1,164 @@
+.container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.menuItemCollapsed {
+  padding-left: 0;
+  justify-content: center;
+}
+
+.menuItemCollapsed .menuButton {
+  padding: 5px;
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.menuItemCollapsed .menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuItem {
+  align-self: stretch;
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  transition: background-color 0.2s ease;
+}
+
+.menuButton {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.menuButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menuButtonContent {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.menuText {
+  color: var(--text-menu, white);
+  font-size: 12px;
+  font-family: 'Onest';
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.menuIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.menuArrow {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.collapsibleOpen .menuArrow {
+  transform: rotate(90deg);
+}
+
+.subMenuContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.subMenuWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.connectorContainer {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 16px;
+  height: 100%;
+  z-index: 1;
+}
+
+.subMenuItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.subMenuItem {
+  align-self: stretch;
+  height: 40px;
+  padding-left: 60px;
+  padding-right: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  transition: background-color 0.2s ease;
+}
+
+.subMenuButton {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.subMenuText {
+  color: var(--text-menu, white);
+  font-size: 12px;
+  font-family: 'Onest';
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.subMenuButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Collapsible content will use default Radix animations */

@@ -1,0 +1,156 @@
+.sidebarMenu {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sidebarMenuButton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.875rem;
+  outline: none;
+  transition: width, height, padding;
+  height: 2rem;
+  font-size: 0.875rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarMenuButton:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+.sidebarMenuButton:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.sidebarMenuButton[aria-disabled='true'] {
+  pointer-events: none;
+}
+
+.sidebarMenuButton[data-active='true'] {
+  font-weight: 500;
+}
+
+[data-collapsible='icon'] .sidebarMenuButton {
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: 0.5rem !important;
+}
+
+.sidebarMenuButton > span:last-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebarMenuButton > svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.sidebarMenuItem:has([data-sidebar='menu-action']) .sidebarMenuButton {
+  padding-right: 2rem;
+}
+
+/* SidebarMenuSubButton styles */
+.sidebarMenuSubButton {
+  display: flex;
+  height: 1.75rem;
+  min-width: 0;
+  transform: translateX(-1px);
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  padding: 0 0.5rem;
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebarMenuSubButton:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebarMenuSubButton:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.sidebarMenuSubButton:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.sidebarMenuSubButton[data-active='true'] {
+  color: white;
+  font-weight: 500;
+}
+
+.sidebarMenuSubButton > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebarMenuSubButton > svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+[data-collapsible='icon'] .sidebarMenuSubButton {
+  display: none;
+}
+
+/* SidebarMenuSub styles */
+.sidebarMenuSubContainer {
+  position: relative;
+  display: flex;
+}
+
+.sidebarMenuSubLine {
+  width: 14px;
+  height: 100%;
+  position: relative;
+  margin-left: 16px;
+}
+
+.sidebarMenuSubLineInner {
+  width: 14px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  outline: 1px #88bbbb solid;
+  outline-offset: -0.5px;
+}
+
+.sidebarMenuSub {
+  margin-left: 8px;
+  margin-right: 0.875rem;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  width: 100%;
+}
+
+[data-collapsible='icon'] .sidebarMenuSub,
+[data-collapsible='icon'] .sidebarMenuSubContainer,
+[data-collapsible='icon'] .sidebarMenuSubLine {
+  display: none;
+}

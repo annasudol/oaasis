@@ -1,0 +1,51 @@
+.header {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.title {
+  color: var(--text-heading, #38393b);
+  font-size: 14px;
+  font-family: 'Onest', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.iconButton {
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 6px;
+  outline: 1px solid #e1e5ec;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.toggleButton {
+  width: 28px;
+  height: 28px;
+  padding: 4px 8px;
+  background: var(--surface-primary, white);
+  border-radius: 6px;
+  outline: 1px solid #d9dfea;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}

@@ -1,0 +1,140 @@
+.content {
+  background-color: var(--color-neutral);
+  color: #000000;
+  border: none;
+  z-index: 50;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: 'Onest', sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  text-wrap: balance;
+}
+
+/* Animation states */
+.content[data-state='closed'] {
+  animation:
+    fadeOut 150ms ease-in,
+    zoomOut 150ms ease-in;
+}
+
+.content[data-state='open'] {
+  animation:
+    fadeIn 150ms ease-out,
+    zoomIn 150ms ease-out;
+}
+
+/* Side positioning animations */
+.content[data-side='bottom'] {
+  transform-origin: top;
+  animation:
+    slideFromTop 150ms ease-out,
+    fadeIn 150ms ease-out;
+}
+
+.content[data-side='top'] {
+  transform-origin: bottom;
+  animation:
+    slideFromBottom 150ms ease-out,
+    fadeIn 150ms ease-out;
+}
+
+.content[data-side='left'] {
+  transform-origin: right;
+  animation:
+    slideFromRight 150ms ease-out,
+    fadeIn 150ms ease-out;
+}
+
+.content[data-side='right'] {
+  transform-origin: left;
+  animation:
+    slideFromLeft 150ms ease-out,
+    fadeIn 150ms ease-out;
+}
+
+.arrow {
+  background-color: var(--color-neutral);
+  fill: var(--color-neutral);
+  z-index: 50;
+  width: 8px;
+  height: 8px;
+  transform: translateY(calc(-50% - 2px)) rotate(45deg);
+  border-radius: 1px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-0.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(0.5rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-0.5rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(0.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,17 @@
+.sidebarTrigger {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}

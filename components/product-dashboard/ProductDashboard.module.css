@@ -1,0 +1,159 @@
+.innerContainer {
+  width: 100%;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 100%;
+}
+
+.headerSection {
+  margin: 16px 0;
+}
+
+.navigationHeader {
+  margin-bottom: 16px;
+}
+
+.navigationTitle {
+  font-family: 'Onest', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0;
+  line-height: 20px;
+}
+
+.navigationContent {
+  flex: 1;
+  padding: 0 24px 24px 4px;
+  background-color: var(--color-white);
+  overflow-y: auto;
+}
+
+.collapseButton {
+  margin: 16px 0 8px 0px;
+  padding: 0;
+}
+
+.collapseText {
+  font-family: 'Onest', sans-serif;
+  font-size: 13px;
+  color: var(--color-primary);
+  font-weight: 500;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.collapseText:hover {
+  opacity: 0.9;
+}
+
+.chevronIcon {
+  height: 12px;
+  width: 12px;
+  transition: transform 0.2s;
+}
+
+.chevronRotated {
+  transform: rotate(90deg);
+}
+
+.categoryButton {
+  width: 100%;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.categoryButton:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.categoryTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.categoryIcon {
+  height: 12px;
+  width: 12px;
+  color: var(--color-text-light);
+}
+
+.categoryTitle {
+  font-family: 'Onest', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  line-height: 16px;
+}
+
+.categoryDivider {
+  border-bottom: none;
+}
+
+.categoryDivider:last-child {
+  border-bottom: none;
+}
+
+.subcategoryContainer {
+  margin-left: 16px;
+  border: none;
+}
+
+.subcategoryTitle {
+  font-family: 'Onest', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  line-height: 16px;
+}
+
+.productItem {
+  padding: 3px 0 3px 12px;
+  position: relative;
+  border: none;
+}
+
+.productItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-medium);
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Removed rule that was hiding bullet point on first child */
+
+.productText {
+  color: var(--color-text-medium);
+  font-family: 'Onest', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.noResults {
+  text-align: center;
+  padding: 16px 0;
+  color: var(--color-text-light);
+  font-family: 'Onest', sans-serif;
+  font-size: 12px;
+}

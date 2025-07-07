@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  width: 100%;
+}
+.appContent {
+  overflow: auto; 
+  flex: 1 1 0%; 
+  height: 100%; 
+  
+}
+.appLayout {
+  display: flex;
+  height: 100vh;
+  width: 280px;
+  background-color: var(--color-background);
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--color-white);
+  height: calc(100vh - 32px);
+  margin: 16px;
+  padding: 8px 12px;
+  border-radius: 16px;
+}
+
+.contentWrapper {
+  overflow: auto;
+}
