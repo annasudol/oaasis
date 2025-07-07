@@ -107,4 +107,5 @@
   display: flex;
   padding-bottom: 16px; /* Add some bottom padding for visual spacing */
   flex-shrink: 0; /* Prevent the footer from shrinking */
+  /* margin: 0 5px; */
 }
