@@ -91,34 +91,3 @@ The project includes Playwright for end-to-end testing:
 npx playwright test
 ```
 
-## 🎨 Styling
-
-Oaasis uses a combination of:
-- **Tailwind CSS** for utility-first styling
-- **CSS Modules** for component-specific styles
-- **Radix UI** for accessible, unstyled components
-- **Custom CSS variables** for theme consistency
-
-## 🌙 Theme Support
-
-The application supports both light and dark themes using `next-themes`. Theme switching is available through the UI.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is private and proprietary.
-
-## 📞 Support
-
-For support and questions, please open an issue in the repository.
-
----
-
-Built with ❤️ using Next.js and modern web technologies.
