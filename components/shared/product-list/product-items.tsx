@@ -14,7 +14,6 @@ interface ProductItemsProps {
 
 export const ProductItems: React.FC<ProductItemsProps> = ({
   filteredProducts,
-  searchTerm = '',
 }) => {
   return (
     <>
