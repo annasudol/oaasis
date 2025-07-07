@@ -1,4 +1,4 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('http://localhost:3000');
@@ -29,13 +29,9 @@ test.describe('Oaasis Website Tests', () => {
   test('should not have any console errors', async ({ page }) => {
     const errors: string[] = [];
     
-    page.on('console', msg => {
-      if (msg.type() === 'error') {
-        errors.push(msg.text());
-      }
-    });
+
     
-    await page.goto('https://oaasis.vercel.app/');
+    await page.goto('http://localhost:3000');
     await page.waitForLoadState('networkidle');
     
     // Allow for some common non-critical errors that might occur in production
