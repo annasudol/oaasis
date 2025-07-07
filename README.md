@@ -1,5 +1,7 @@
 # Oaasis - Product Management Dashboard
 
+🌐 **[Live Demo](https://oaasis.vercel.app/)**
+
 A modern, feature-rich product management dashboard built with Next.js, React, and TypeScript. Oaasis provides an intuitive interface for managing products, categories, and inventory with advanced search and filtering capabilities.
 
 ## 🚀 Features
@@ -45,26 +47,43 @@ pnpm dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## 🌍 Live Demo
+
+The application is deployed and available at: **[https://oaasis.vercel.app/](https://oaasis.vercel.app/)**
+
 ## 🏗️ Project Structure
 
 ```
 oaasis_io/
 ├── app/                    # Next.js app directory
+│   ├── favicon.ico        # App favicon
 │   ├── globals.css        # Global styles
 │   ├── layout.tsx         # Root layout
+│   ├── page.module.css    # Page-specific styles
 │   └── page.tsx           # Home page
 ├── components/            # Reusable components
-│   ├── app-sidebar/       # Application sidebar
-│   ├── dropdown-btn/      # Dropdown button component
-│   ├── nav-main/          # Main navigation
-│   ├── nav-sidebar/       # Sidebar navigation
-│   ├── product-dashboard/ # Product dashboard
-│   ├── product-list/      # Product list component
-│   ├── search-bar/        # Search functionality
-│   └── ui/               # UI primitives
+│   ├── shared/            # Shared components
+│   │   ├── app-sidebar/   # Application sidebar
+│   │   ├── dropdown-btn/  # Dropdown button component
+│   │   ├── nav-main/      # Main navigation
+│   │   ├── nav-sidebar/   # Sidebar navigation
+│   │   ├── nav-user/      # User navigation
+│   │   ├── product-dashboard/ # Product dashboard
+│   │   ├── product-list/  # Product list component
+│   │   └── search-bar/    # Search functionality
+│   └── ui/               # UI primitives (Radix UI)
 ├── hooks/                # Custom React hooks
 ├── lib/                  # Utility functions
-└── public/               # Static assets
+├── public/               # Static assets
+│   ├── icons/            # Icon assets
+│   └── *.svg             # SVG assets
+├── tests/                # Test files
+├── components.json       # Component configuration
+├── next.config.ts        # Next.js configuration
+├── package.json          # Dependencies
+├── playwright.config.ts  # E2E test configuration
+├── prettier.config.js    # Code formatting
+└── tsconfig.json         # TypeScript configuration
 ```
 
 ## 🧩 Key Components
