@@ -8,28 +8,20 @@ A modern, feature-rich product management dashboard built with Next.js, React, a
 - **Advanced Search**: Real-time search functionality across all products
 - **Interactive UI**: Modern interface with drag-and-drop capabilities
 - **Responsive Design**: Optimized for desktop and mobile devices
-- **Data Visualization**: Charts and analytics powered by Recharts
-- **Dark/Light Theme**: Theme switching with next-themes
 - **Modular Components**: Reusable UI components with Radix UI
 
 ## 🛠️ Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org) with Turbopack
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS with CSS Modules
+- **Styling**: CSS Modules
 - **UI Components**: Radix UI primitives
-- **Icons**: Tabler Icons & Lucide React
-- **Data Tables**: TanStack Table
-- **Charts**: Recharts
-- **Drag & Drop**: @dnd-kit
-- **Theming**: next-themes
-- **Validation**: Zod
 
 ## 📦 Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/annasudol/oaasis_io.git
 cd oaasis_io
 ```
 
