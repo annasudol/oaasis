@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 import { useSidebar } from '../sidebar-provider'
 import styles from './SidebarRail.module.css'
 
-export function SidebarRail({ className, ...props }: React.ComponentProps<'button'>) {
+export function SidebarRail({ ...props }: React.ComponentProps<'button'>) {
   const { toggleSidebar } = useSidebar()
 
   return (
