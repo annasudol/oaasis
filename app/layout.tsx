@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Onest } from 'next/font/google'
 import './globals.css'
-import { SidebarProvider } from '@/components/nav-sidebar/sidebar-provider'
-import { AppSidebar } from '@/components/app-sidebar'
+import { SidebarProvider } from '@/components/shared/nav-sidebar/sidebar-provider'
+import { AppSidebar } from '@/components/shared/app-sidebar'
 import styles from './page.module.css'
 
 const onestFont = Onest({
@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head />
       <body className={`${onestFont.variable} h-full`}>
         <SidebarProvider>
           <div className={styles.app}>

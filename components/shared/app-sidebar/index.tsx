@@ -2,15 +2,15 @@
 
 import * as React from 'react'
 import Image from 'next/image'
-import { NavMain } from '@/components/nav-main'
+import { NavMain } from '@/components/shared/nav-main'
 
-import { Sidebar } from '@/components/nav-sidebar/sidebar'
-import { SidebarRail } from '@/components/nav-sidebar/sidebar-rail/sidebar-rail'
-import { SidebarTrigger } from '@/components/nav-sidebar/sidebar-trigger'
+import { Sidebar } from '@/components/shared/nav-sidebar/sidebar'
+import { SidebarRail } from '@/components/shared/nav-sidebar/sidebar-rail/sidebar-rail'
+import { SidebarTrigger } from '@/components/shared/nav-sidebar/sidebar-trigger'
 import { cn } from '@/lib/utils'
-import { NavUser } from '@/components/nav-user'
-import { BtnLogout } from '@/components/nav-sidebar/btn-logout'
-import { useSidebar } from '@/components/nav-sidebar/sidebar-provider'
+import { NavUser } from '@/components/shared/nav-user'
+import { BtnLogout } from '@/components/shared/nav-sidebar/btn-logout'
+import { useSidebar } from '@/components/shared/nav-sidebar/sidebar-provider'
 import { Separator } from '@/components/ui/separator'
 
 import styles from './AppSidebar.module.css'

@@ -38,11 +38,6 @@ export const ProductItems: React.FC<ProductItemsProps> = ({
           </li>
         ))}
       </ul>
-
-      {/* Show message if no results */}
-      {searchTerm && filteredProducts.every((item) => item.products?.length === 0) && (
-        <div className={styles.noResults}>No products found matching &quot;{searchTerm}&quot;</div>
-      )}
     </>
   )
 }

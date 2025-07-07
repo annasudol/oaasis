@@ -1,5 +1,5 @@
 import React from 'react'
-import { DropdownBtn } from '@/components/dropdown-btn'
+import { DropdownBtn } from '@/components/shared/dropdown-btn'
 import styles from './Product-list.module.css'
 import { ProductItems } from './product-items'
 

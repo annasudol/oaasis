@@ -1,11 +1,11 @@
 'use client'
 import { useState } from 'react'
 import { Tabs, TabItem } from '@/components/ui/tabs'
-import { SearchBar } from '@/components/search-bar'
+import { SearchBar } from '@/components/shared/search-bar'
 import styles from './ProductDashboard.module.css'
 import Image from 'next/image'
 import { Separator } from '@/components/ui/separator'
-import ProductList from '@/components/product-list'
+import ProductList from '@/components/shared/product-list'
 
 const productData = [
   {

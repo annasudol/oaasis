@@ -1,8 +1,8 @@
 'use client'
 
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
-import { SidebarMenuButton } from '@/components/nav-sidebar/sidebar-menu/sidebar-menu'
-import { useSidebar } from '@/components/nav-sidebar/sidebar-provider'
+import { SidebarMenuButton } from '@/components/shared/nav-sidebar/sidebar-menu/sidebar-menu'
+import { useSidebar } from '@/components/shared/nav-sidebar/sidebar-provider'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import { useState } from 'react'
